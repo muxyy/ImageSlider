@@ -1,29 +1,52 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url(../img/bkg.png);
+}
+
 .container {
-  max-width: 400px;
-  background-color: black;
-  margin: 0 auto;
-  text-align: center;
   position: relative;
-}
-.container div {
-  background-color: white;
-  width: 100%;
-  display: inline-block;
-  display: none;
-}
-.container img {
-  width: 100%;
-  height: auto;
+  height: 660px;
+  width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-button {
+.big {
   position: absolute;
+  top:900px;
+  left:20px;
+
+  -webkit-transition: top 1s ease;
+  -moz-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  -ms-transition: top 1s ease;
+  transition: top 1s ease;
 }
 
-.next {
-  right: 5px;
+
+a {
+  float: left;
+  margin: 20px;
 }
 
-.prev {
-  left: 5px;
+a:hover .thumb {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+a:hover .big {
+  top: 260px;
+}
+
+.featured {
+  top: 260px;
+  left: 20px;
+  z-index: -3;
 }
